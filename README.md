@@ -5,7 +5,7 @@ This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
 [![Author](https://img.shields.io/badge/author-shadowNo--1-informational?style=flat&logo=github&logoColor=181717&color=green)](https://github.com/shadowNo-1)
 ![](https://img.shields.io/badge/license-GNU-informational?style=flat&logo=gnu&logoColor=white&color=A42E2B)
 
-## WeBASE说明
+## WeBASE版本说明
 
 ## 节点前置服务搭建
   1.下载安装包
