@@ -1,4 +1,3 @@
-![image](https://github.com/shadowNo-1/WeBASE-_Build_Tutorial/assets/61909905/06756fe0-da77-47cb-b019-badeb3ad9485)# WeBASE-_Build_Tutorial
 WeBASE _Build_Tutorial
 This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
 
