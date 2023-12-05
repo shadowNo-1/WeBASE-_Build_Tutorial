@@ -35,6 +35,7 @@ This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
   > export PATH=\$PATH:\$JAVA_HOME/bin
   > EOF
   ```
+  ![image](https://github.com/shadowNo-1/WeBASE-_Build_Tutorial/assets/61909905/b89239b3-05cc-4f87-ba06-f7a2a7d17017)
 - 应用配置文件
   ```bash
   source /etc/profile.d/jdk14.sh
@@ -43,6 +44,8 @@ This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
   ```bash
   echo $JAVA_HOME
   ```
+  ![image](https://github.com/shadowNo-1/WeBASE-_Build_Tutorial/assets/61909905/39f1f5ab-b098-4bde-96e1-b6fe285e77f5)
+
 
 
 ## 节点前置服务搭建
