@@ -71,3 +71,22 @@ This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
   ```bash
   cp -r ~/fisco/nodes/127.0.0.1/sdk/* ./conf/
   ```
+  5.服务启停
+    服务启停命令：
+  - ▶️启动
+    ```bash
+    bash start.sh
+    ```
+  - 🛑停止
+    ```bash
+    bash stop.sh
+    ```
+  - 🚩检查
+    ```bash
+    bash status.sh 
+    ```
+  启动成功将出现如下日志：
+  ```bash
+  ...
+  	Application() - main run success...
+  ```
