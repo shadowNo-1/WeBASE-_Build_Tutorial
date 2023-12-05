@@ -35,6 +35,14 @@ This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
   > export PATH=\$PATH:\$JAVA_HOME/bin
   > EOF
   ```
+- 应用配置文件
+  ```bash
+  source /etc/profile.d/jdk14.sh
+  ```
+- 输入下列命令，查看jdk路径
+  ```bash
+  echo $JAVA_HOME
+  ```
 
 
 ## 节点前置服务搭建
