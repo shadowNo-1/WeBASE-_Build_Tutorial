@@ -7,6 +7,36 @@ This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
 
 ## WeBASE版本说明
 
+## 基础环境配置
+### 安装Java14
+- 更新apt
+  ```bash
+  sudo apt update
+  ```
+- 下载Java14
+  ```bash
+  curl -O https://download.java.net/java/GA/jdk14/076bab302c7b4508975440c56f6cc26a/36/GPL/openjdk-14_linux-x64_bin.tar.gz
+  ```
+- 解压缩
+  ```bash
+  sudo tar xvf openjdk-14_linux-x64_bin.tar.gz
+  ```
+- 将解压后的`jdk-14`目录移动到`opt`目录下
+  ```bash
+  sudo mv jdk-14/ /opt/
+  ```
+- 执行下列`tee`命令，配置环境变量
+  ```bash
+  sudo tee /etc/profile.d/jdk14.sh <<EOF
+  ```
+- 配置环境变量
+  ```bash
+  > export JAVA_HOME=/opt/jdk-14
+  > export PATH=\$PATH:\$JAVA_HOME/bin
+  > EOF
+  ```
+
+
 ## 节点前置服务搭建
   1.下载安装包
   ```bash
