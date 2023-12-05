@@ -1,4 +1,4 @@
-# WeBASE-_Build_Tutorial
+![image](https://github.com/shadowNo-1/WeBASE-_Build_Tutorial/assets/61909905/06756fe0-da77-47cb-b019-badeb3ad9485)# WeBASE-_Build_Tutorial
 WeBASE _Build_Tutorial
 This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
 
@@ -90,3 +90,26 @@ This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
   ...
   	Application() - main run success...
   ```
+
+
+## 状态检查
+  1.检查node节点状态：
+  ```bash
+  ps -ef | grep node
+  ```
+  2.检查webase前置服务状态
+  ```bash
+  ps -ef | grep webase.front
+  ```
+  3.检查节点channel端口(默认为20200)是否已监听
+  ```bash
+  netstat -anlp | grep 20200
+  ```
+  ![image](https://github.com/shadowNo-1/WeBASE-_Build_Tutorial/assets/61909905/ef823e3f-0b52-443c-8338-6cbc62966f08)
+
+  4.检查webase-front端口(默认为5002)是否已监听
+  ```bash
+  netstat -anlp | grep 5002
+  ```
+  ![image](https://github.com/shadowNo-1/WeBASE-_Build_Tutorial/assets/61909905/ed7a236e-9e90-45c2-917b-6af9736a7e59)
+
