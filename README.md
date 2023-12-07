@@ -7,7 +7,7 @@ This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
 
 ## WeBASE版本说明
 
-# 基础环境配置
+## 基础环境配置
 ## ♨️安装Java14
 - 更新apt
   ```bash
