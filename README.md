@@ -53,12 +53,20 @@ This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
   sudo apt install mysql-server
   sudo apt install mysql-client
   ```
+- 执行下列命令，查看MySQL版本
+  ```bash
+  mysql -V
+  ```
+  若输出如下信息则安装成功:
+  
+  ![image](https://github.com/shadowNo-1/WeBASE-_Build_Tutorial/assets/61909905/8387cc2a-4320-4a60-860a-ea50beee5da5)
+
 - 安装完成后，MySQL服务将自动启动。执行下列命令查看MySQL服务运行状态
   ```bash
   sudo systemctl status mysql
   ```
   ![image](https://github.com/shadowNo-1/WeBASE-_Build_Tutorial/assets/61909905/2f345d21-43f6-4635-8570-2d22fa24d523)
-
+## Python部署
 
 
 
