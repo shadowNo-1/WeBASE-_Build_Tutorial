@@ -8,7 +8,7 @@ This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
 ## WeBASE版本说明
 
 ## 基础环境配置
-### 安装Java14
+### ♨️安装Java14
 - 更新apt
   ```bash
   sudo apt update
@@ -48,7 +48,7 @@ This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
 
 
 
-## 节点前置服务搭建
+## 🏗️节点前置服务搭建
   1.下载安装包
   ```bash
   wget https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/releases/download/v1.5.5/webase-front.zip
@@ -91,7 +91,7 @@ This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
   ```
 
 
-## 状态检查
+## 🧐状态检查
   ### 1.检查node节点状态：
   ```bash
   ps -ef | grep node
