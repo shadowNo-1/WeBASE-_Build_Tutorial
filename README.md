@@ -92,23 +92,52 @@ This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
 
 
 ## 状态检查
-  1.检查node节点状态：
+  ### 1.检查node节点状态：
   ```bash
   ps -ef | grep node
   ```
-  2.检查webase前置服务状态
+  ### 2.检查webase前置服务状态
   ```bash
   ps -ef | grep webase.front
   ```
-  3.检查节点channel端口(默认为20200)是否已监听
+  ### 3.检查节点channel端口(默认为20200)是否已监听
   ```bash
   netstat -anlp | grep 20200
   ```
   ![image](https://github.com/shadowNo-1/WeBASE-_Build_Tutorial/assets/61909905/ef823e3f-0b52-443c-8338-6cbc62966f08)
 
-  4.检查webase-front端口(默认为5002)是否已监听
+  ### 4.检查webase-front端口(默认为5002)是否已监听
   ```bash
   netstat -anlp | grep 5002
   ```
   ![image](https://github.com/shadowNo-1/WeBASE-_Build_Tutorial/assets/61909905/ed7a236e-9e90-45c2-917b-6af9736a7e59)
+
+  ### 5.检查服务日志
+  日志中若出现报错信息，可根据信息提示判断服务是否异常，并根据错误提示或根据[WeBASE-Front常见问题](https://webasedoc.readthedocs.io/zh-cn/latest/docs/WeBASE-Front/appendix.html)进行错误排查
+
+ > [!IMPORTANT]
+ > - 如果节点进程已启用且端口已监听，可跳过本章节
+ > - 如果节点前置异常，如检查不到进程或端口监听，则需要`webase-front/log`中查看日志的错误信息
+ > - 如果检查步骤出现检查不到进程或端口监听等异常，或者前置服务无法访问，可以按以下顺序逐步检查日志：
+ >   - 检查`webase-front/log`中的节点前置日志错误信息，若无错误且日志最后出现`application run success`字样则代表运行成功
+ >   - 检查`nodes/127.0.0.1/nodeXXX/log`中的节点日志
+
+  ### 查看运行成功日志：
+  webase-front运行成功后会打印日志`main run success`，可通过搜索此关键字来确认服务正常运行。
+  ```bash
+  cd webase-front
+  grep -B 3 "main run success" log/WeBASE-Front.log
+  ```
+  ![image](https://github.com/shadowNo-1/WeBASE-_Build_Tutorial/assets/61909905/4475c8ac-2043-458f-b84a-fc5b4feaf2a7)
+
+   ### 6.访问控制台
+   访问 `http://{deployIP}:{frontPort}/WeBASE-Front`，示例：
+   ```bash
+   http://localhost:5002/WeBASE-Front 
+   ```
+  ![image](https://github.com/shadowNo-1/WeBASE-_Build_Tutorial/assets/61909905/a32f6723-7a23-4ff4-841a-a9e8514aebc1)
+
+> [!NOTE]
+> 若服务启动后无异常，但仍然无法访问，可以检查服务器的网络安全策略：
+> - 开放节点前置端口：如果希望通过浏览器(Chrome Safari或Firefox)直接访问webase-front节点前置的页面，则需要开放节点前置端口`frontPort`（默认5002）
 
