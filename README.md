@@ -3,6 +3,8 @@ This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
 
 [![Author](https://img.shields.io/badge/author-shadowNo--1-informational?style=flat&logo=github&logoColor=181717&color=green)](https://github.com/shadowNo-1)
 ![](https://img.shields.io/badge/license-GNU-informational?style=flat&logo=gnu&logoColor=white&color=A42E2B)
+![](https://img.shields.io/badge/Ubuntu-22.04.3-informational?style=flat&logo=ubuntu&logoColor=e95420&color=e95420)
+![](https://img.shields.io/badge/Python-3.x-informational?style=flat&logo=python&logoColor=6993B6&color=3776AB)
 ![Java](https://is.gd/QQflSA)
 
 ## WeBASE版本说明
@@ -48,12 +50,16 @@ This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
 
 ## 🐬安装MySQL数据库
 ### 示例均为MySQL8.0<sub>*截止至2023-12-07 T 11:34:28 GMT+8*<sub />
+- 更新apt
+  ```bash
+  sudo apt update
+  ```
 - 运行以下命令安装mysql:
   ```bash
   sudo apt install mysql-server
   sudo apt install mysql-client
   ```
-- 执行下列命令，查看MySQL版本
+- 执行以下命令，查看MySQL版本
   ```bash
   mysql -V
   ```
@@ -61,13 +67,36 @@ This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
   
   ![image](https://github.com/shadowNo-1/WeBASE-_Build_Tutorial/assets/61909905/8387cc2a-4320-4a60-860a-ea50beee5da5)
 
-- 安装完成后，MySQL服务将自动启动。执行下列命令查看MySQL服务运行状态
+- 安装完成后，MySQL服务将自动启动。执行以下命令查看MySQL服务运行状态
   ```bash
   sudo systemctl status mysql
   ```
   ![image](https://github.com/shadowNo-1/WeBASE-_Build_Tutorial/assets/61909905/2f345d21-43f6-4635-8570-2d22fa24d523)
-## Python部署
+## 🐍Python部署
+Python版本要求使用`python3.x`, 推荐使用`python3.6`及以上版本
+- 更新apt
+  ```bash
+  sudo apt update
+  ```
+- 输入以下命令，检查系统中安装的Python3版本
+  ```bash
+  python3 -V
+  ```
+  如果系统已安装python则输出如下信息：
 
+  ![image](https://github.com/shadowNo-1/WeBASE-_Build_Tutorial/assets/61909905/64df5461-960c-48f6-8267-8a6236879dac)
+
+- 添加仓库<sub>***(🔔若需要)***<sub />
+  ```bash
+  sudo add-apt-repository ppa:deadsnakes/ppa
+  ```
+  
+- 安装python
+  ```bash
+  sudo apt-get install -y python3.6
+  sudo apt install -y python3-pip
+  ```
+  
 
 
 ## 🏗️节点前置服务搭建
