@@ -7,8 +7,8 @@ This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
 
 ## WeBASE版本说明
 
-## 基础环境配置
-### ♨️安装Java14
+# 基础环境配置
+## ♨️安装Java14
 - 更新apt
   ```bash
   sudo apt update
@@ -45,6 +45,14 @@ This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
   echo $JAVA_HOME
   ```
   ![image](https://github.com/shadowNo-1/WeBASE-_Build_Tutorial/assets/61909905/39f1f5ab-b098-4bde-96e1-b6fe285e77f5)
+
+## 🐬安装MySQL数据库
+### 示例均为MySQL8.0<sub>*截止至2023-12-07 T 11:34:28 GMT+8*<sub />
+运行以下命令安装mysql:
+```bash
+sudo apt install mysql-server
+sudo apt install mysql-client
+```
 
 
 
