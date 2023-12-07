@@ -48,11 +48,17 @@ This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
 
 ## 🐬安装MySQL数据库
 ### 示例均为MySQL8.0<sub>*截止至2023-12-07 T 11:34:28 GMT+8*<sub />
-运行以下命令安装mysql:
-```bash
-sudo apt install mysql-server
-sudo apt install mysql-client
-```
+- 运行以下命令安装mysql:
+  ```bash
+  sudo apt install mysql-server
+  sudo apt install mysql-client
+  ```
+- 安装完成后，MySQL服务将自动启动。执行下列命令查看MySQL服务运行状态
+  ```bash
+  sudo systemctl status mysql
+  ```
+  ![image](https://github.com/shadowNo-1/WeBASE-_Build_Tutorial/assets/61909905/2f345d21-43f6-4635-8570-2d22fa24d523)
+
 
 
 
